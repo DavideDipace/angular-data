@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-item.component.css'],
 })
 export class UserItemComponent implements OnInit {
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
+  name: string; // <-- aggiunta la proprietà name
+  constructor() { 
+    this.name = 'Felipe'; // setta il nome nel costruttore
   }
-  // ... component logic
+  ngOnInit() {
+  }
 }
